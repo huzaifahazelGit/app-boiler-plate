@@ -8,7 +8,7 @@ This project aims to be a strong foundation for react-native applications. It pr
 - [react-navigation](https://reactnavigation.org/) navigation library.
 - [redux](https://redux.js.org/) for state management.
 - [redux-persist](https://github.com/rt2zz/redux-persist) as persistance layer.
-- [redux-toolki](https://redux-toolkit.js.org/introduction/getting-started) to dispatch actions into store and selector from redux-store.
+- [redux-toolkit](https://redux-toolkit.js.org/introduction/getting-started) to dispatch actions into store and selector from redux-store.
 
 ## Usage
 
