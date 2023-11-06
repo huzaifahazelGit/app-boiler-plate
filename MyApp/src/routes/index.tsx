@@ -10,15 +10,8 @@ const Routes = () => {
 
   return (
     <SafeAreaProvider>
-      {isLoggedIn && status === 'Active' ? (
-        <MainDrawer />
-      ) : isLoggedIn && status !== 'Active' ? (
-        <MainStack />
-      ) : (
-        <AuthStack />
-      )}
-      {/* <>{isLoggedIn ? <MainStack /> : <AuthStack />}</> */}
-    </SafeAreaProvider>
+     {isLoggedIn ? <MainStack /> : <AuthStack />}
+   </SafeAreaProvider>
   );
 };
 

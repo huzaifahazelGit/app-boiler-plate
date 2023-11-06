@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
 export const GST = StyleSheet.create({
+  FLEX: {
+    flex: 1,
+  },
   CENTER: {
     justifyContent: "center",
     alignItems: "center",
-  },
-  MAIN: {
-    flex: 1,
   },
   ROW: {
     flexDirection: "row",
