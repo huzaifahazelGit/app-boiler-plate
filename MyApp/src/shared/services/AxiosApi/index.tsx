@@ -1,4 +1,4 @@
-import {API_URL, BASE_URL} from '@env';
+import { API_URL, BASE_URL } from '@env';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {store, toggleLoader} from '@redux';
 import axios from 'axios';

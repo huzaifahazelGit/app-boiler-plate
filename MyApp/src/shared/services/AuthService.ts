@@ -1,6 +1,6 @@
 import {ENDPOINTS} from '@utils';
-import {BASE_URL} from '@env';
 import {FetchIntercepter} from './FetchIntercepter';
+import { BASE_URL } from '@env';
 
 export const signin = async (params: any) => {
   let url = BASE_URL + ENDPOINTS.LOGIN;

@@ -1,6 +1,6 @@
 import axios, {AxiosInstance} from 'axios';
 import {store} from '@redux';
-import {BASE_URL} from '@env';
+import { BASE_URL } from '@env';
 
 export const HTTP_CLIENT: AxiosInstance = axios.create({
   baseURL: BASE_URL,

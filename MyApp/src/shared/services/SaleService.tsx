@@ -1,6 +1,6 @@
-import {BASE_URL, BASE_URL_TRANSACTION} from '@env';
 import {ENDPOINTS} from '@utils';
 import {FetchIntercepter} from '@services';
+import { BASE_URL, BASE_URL_TRANSACTION } from '@env';
 
 export const saleOrder = async (params: any) => {
   let url = BASE_URL_TRANSACTION + ENDPOINTS.SALE_ORDER;
@@ -14,7 +14,7 @@ export const ParseEMV = async (params: any) => {
 };
 
 export const setPasscode = async (params: any) => {
-  let url = BASE_URL + ENDPOINTS.SET_PASSCODE;
+  let url = BASE_URL  + ENDPOINTS.SET_PASSCODE;
   let res = await FetchIntercepter(url, 'POST', true, params, true);
   return res;
 };
