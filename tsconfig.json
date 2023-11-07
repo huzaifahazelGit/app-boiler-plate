@@ -12,7 +12,5 @@
       "@redux": ["shared/redux"],
       "@hooks": ["shared/hooks"]
     }
-
-
   }
 }

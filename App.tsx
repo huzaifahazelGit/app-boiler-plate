@@ -11,9 +11,9 @@ const App = () => {
   let appTheme = isEnabledOne ? darkThemeStyle : defaultTheme;
   return (
     <Provider store={store}>
-        <NavigationContainer theme={appTheme as any} ref={navigationRef}>
-          <Routes />
-        </NavigationContainer>
+      <NavigationContainer theme={appTheme as any} ref={navigationRef}>
+        <Routes />
+      </NavigationContainer>
     </Provider>
   );
 };

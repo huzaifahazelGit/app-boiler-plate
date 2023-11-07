@@ -1,28 +1,28 @@
-import {GST, } from '@theme';
+import {GST} from '@theme';
 import {login} from '@assets';
-import useStyles from './style';
-
+import getStyles from './style';
 import React from 'react';
-import {
-  View,
-  Image,
-  ScrollView,
-} from 'react-native';
-
+import {View, ScrollView} from 'react-native';
 import {useTheme} from '@react-navigation/native';
-import {Wrapper} from '@components';
+import {Wrapper, ImageComponent} from '@components';
+import {IconSets, Icons} from '@utils';
 
 export default function Login() {
   const myTheme: any = useTheme();
-  const styles = useStyles(myTheme.colors);
-  
+  const styles = getStyles(myTheme.colors);
+
   return (
-    <Wrapper viewStyle={styles.wrapView}>
+    <Wrapper>
       <ScrollView style={[GST.FLEX]} keyboardShouldPersistTaps="always">
         <View style={styles.imgView}>
-          <Image style={styles.img} source={login} />
+          <ImageComponent style={styles.img} source={login} />
+          <Icons
+            iconSet={IconSets.Ionicons}
+            name={'star'}
+            size={30}
+            color="gold"
+          />
         </View>
-     
       </ScrollView>
     </Wrapper>
   );

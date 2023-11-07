@@ -8,8 +8,8 @@ const Routes = () => {
 
   return (
     <SafeAreaProvider>
-     {isLoggedIn ? <MainStack /> : <AuthStack />}
-   </SafeAreaProvider>
+      {isLoggedIn ? <MainStack /> : <AuthStack />}
+    </SafeAreaProvider>
   );
 };
 

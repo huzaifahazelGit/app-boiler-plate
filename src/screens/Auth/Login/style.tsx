@@ -1,49 +1,17 @@
 import {StyleSheet} from 'react-native';
-import {Typography, GST, RF, SCREEN_HEIGHT} from '@theme';
-import {horizontalScale, moderateScale, verticalScale} from '@theme';
+import {RF} from '@theme';
 
-const useStyles = (colors: any) =>
+const getStyles = (color: any) =>
   StyleSheet.create({
-    wrapContainer: {
-      paddingHorizontal: RF(40),
-      marginTop: RF(80),
-    },
-    wrapView: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      paddingHorizontal: 0,
-    },
-    topMarginView: {
-      paddingTop: RF(32),
-    },
     imgView: {
       height: RF(220),
-      backgroundColor: '#fff',
+      backgroundColor: color?.white,
     },
     img: {
       width: '100%',
       height: RF(300),
       marginTop: -20,
     },
-    wrapRememberSection: {
-      width: '100%',
-      ...GST.mid_row,
-      paddingTop: RF(30),
-      alignItems: 'center',
-    },
-    wrapButton: {
-      ...GST.mid_row,
-      alignItems: 'center',
-      justifyContent: 'center',
-      paddingTop: verticalScale(32),
-    },
-    btn: {
-      width: RF(160),
-      height: RF(45),
-      alignItems: 'center',
-      borderRadius: RF(100),
-      justifyContent: 'center',
-    },
   });
 
-export default useStyles;
+export default getStyles;

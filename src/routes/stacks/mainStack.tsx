@@ -1,8 +1,7 @@
 import React from 'react';
 import {Login} from '@screens';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-const Stack = createNativeStackNavigator();
+import {createStackNavigator} from '@react-navigation/stack';
+const Stack = createStackNavigator();
 const MainStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
