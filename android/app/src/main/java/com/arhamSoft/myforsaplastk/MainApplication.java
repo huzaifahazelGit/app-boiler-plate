@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.arhamSoft.myforsaplastk;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

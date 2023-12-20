@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.mycompany.myapp"
+    namespace "com.arhamSoft.myforsaplastk"
     defaultConfig {
-        applicationId "com.mycompany.myapp"
+        applicationId "com.arhamSoft.myforsaplastk"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
